@@ -67,21 +67,32 @@
           <h2 class="hero-subtitle">Download our mobile app today!</h2>
           <ul class="hero-list list">
             <li class="hero-item">
+              <svg class="hero-arrow-svg" width="18" height="18">
+                <use href="./images/icons.svg#hero-arrow"></use>
+              </svg>
               Real-time updates and notifications for timely information
             </li>
             <li class="hero-item">
+              <svg class="hero-arrow-svg" width="18" height="18">
+                <use href="./images/icons.svg#hero-arrow"></use>
+              </svg>
               Robust analytics and reporting for data-driven insights
             </li>
             <li class="hero-item">
+              <svg class="hero-arrow-svg" width="18" height="18">
+                <use href="./images/icons.svg#hero-arrow"></use>
+              </svg>
               Offline capabilities for uninterrupted use
             </li>
           </ul>
-          <button class="hero-btn btn" type="button">Download</button>
+          <button class="hero-btn btn" type="button" data-modal-open>
+            Download
+          </button>
         </div>
         <div class="hero-right-side">
           <img
             class="hero-img"
-            src="./images/hero-phone.png"
+            src="./images/hero-img/hero-phone.png"
             alt="phone X"
             width="574"
             height="678"
@@ -178,7 +189,7 @@
             </li>
           </ul>
           <img
-            src="./images/features-img.png"
+            src="./images/features/features-img.png"
             alt=""
             class="features-img"
             width="396"
@@ -244,7 +255,7 @@
         </div>
         <img
           class="video-img"
-          src="./images/video-phone.png"
+          src="./images/video/video-phone.png"
           alt=""
           width="501"
           height="282"
@@ -324,14 +335,14 @@
         <div class="customers-slider">
           <div class="">
             <img
-              src="./images/slider-1.png"
+              src="./images/customers/slider-1.png"
               alt="Jon Dou"
               class="slider-img"
-              width="182"
-              height="182"
+              width="250"
+              height="250"
             />
             <h3 class="customers-name">Jon Doe</h3>
-            <p class="customers-post">Company Inc.</p>
+            <p class="customers-post">Company Inc</p>
             <p class="customers-text">
               I've been using this app for a few weeks now and I have to say,
               I'm really impressed. It's so easy to use and the personalized
@@ -341,34 +352,73 @@
             </p>
           </div>
           <div class="">
-            <img src="" alt="" class="" width="" height="" />
-            <h3 class="customers-name"></h3>
-            <p class="customers-post"></p>
-            <p class="customers-text"></p>
+            <img
+              src="./images/team/team-1.jpg"
+              alt="David Patel"
+              class="slider-img"
+              width="250"
+              height="250"
+            />
+            <h3 class="customers-name">David Patel</h3>
+            <p class="customers-post">Managing Direcor</p>
+            <p class="customers-text">
+              The term director is a title given to the senior management staff
+              of businesses and other large organizations.
+            </p>
           </div>
           <div class="">
-            <img src="" alt="" class="" width="" height="" />
-            <h3 class="customers-name"></h3>
-            <p class="customers-post"></p>
-            <p class="customers-text"></p>
+            <img
+              src="./images/team/team-2.jpg"
+              alt="Rachel Kim"
+              class="slider-img"
+              width="250"
+              height="250"
+            />
+            <h3 class="customers-name">Rachel Kim</h3>
+            <p class="customers-post">Lead Designer</p>
+            <p class="customers-text">
+              The lead designer (sometimes referred to as the design
+              coordinator), directs and co-ordinates other designers in the
+              consultant team as well as any specialist designers that are
+              appointed.
+            </p>
           </div>
           <div class="">
-            <img src="" alt="" class="" width="" height="" />
-            <h3 class="customers-name"></h3>
-            <p class="customers-post"></p>
-            <p class="customers-text"></p>
+            <img
+              src="./images/team/team-3.jpg"
+              alt="Samantha Chen"
+              class="slider-img"
+              width="250"
+              height="250"
+            />
+            <h3 class="customers-name">Samantha Chen</h3>
+            <p class="customers-post">Lead Developer</p>
+            <p class="customers-text">
+              In software development, a lead programmer is responsible for
+              providing technical guidance and mentorship to a team of software
+              developers. Alternative titles include development lead, technical
+              lead, lead programmer, or lead application developer.
+            </p>
           </div>
           <div class="">
-            <img src="" alt="" class="" width="" height="" />
-            <h3 class="customers-name"></h3>
-            <p class="customers-post"></p>
-            <p class="customers-text"></p>
-          </div>
-          <div class="">
-            <img src="" alt="" class="" width="" height="" />
-            <h3 class="customers-name"></h3>
-            <p class="customers-post"></p>
-            <p class="customers-text"></p>
+            <img
+              src="./images/team/team-4.jpg"
+              alt="Andrew Nguyen"
+              class="slider-img"
+              width="250"
+              height="250"
+            />
+            <h3 class="customers-name">Andrew Nguyen</h3>
+            <p class="customers-post">Sr. UI Designer</p>
+            <p class="customers-text">
+              Unlike user interface design, which focuses solely on the design
+              of a computer interface, UX design encompasses all aspects of a
+              user's perceived experience with a product or website, such as its
+              usability, usefulness, desirability, brand perception, and overall
+              performance. UX design is also an element of the customer
+              experience (CX), which encompasses all aspects and stages of a
+              customer's experience and interaction with a company.
+            </p>
           </div>
         </div>
       </div>
@@ -407,20 +457,18 @@
                 </a>
               </li>
             </ul>
-            <addres class="addres">
-              <ul class="addres-list list">
-                <li class="addres-item">
-                  <a class="addres-link link" href="tel:+xxxxxxxxxxxx"
-                    >+xx-xxxx-xxxx-xx</a
-                  >
-                </li>
-                <li class="addres-item">
-                  <a class="addres-link link" href="mailto:goIteens@gmail.com"
-                    >goIteens@gmail.com</a
-                  >
-                </li>
-              </ul>
-            </addres>
+            <ul class="addres-list list">
+              <li class="addres-item">
+                <a class="addres-link link" href="tel:+xxxxxxxxxxxx"
+                  >+xx-xxxx-xxxx-xx</a
+                >
+              </li>
+              <li class="addres-item">
+                <a class="addres-link link" href="mailto:goIteens@gmail.com"
+                  >goIteens@gmail.com</a
+                >
+              </li>
+            </ul>
           </div>
           <div class="coctacts-right-side">
             <form class="form">
@@ -453,8 +501,164 @@
         <p class="footer-text">© 2019 GoIteens Template. All Rights Reserved</p>
       </div>
     </footer>
-    <div class="backdrop">
-      <div class="modal"></div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" type="button" data-modal-close>
+          <svg class="close-svg" width="28" height="28">
+            <use href="./images/icons.svg#close-btn"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">Download</h2>
+        <div class="modal-position-top">
+          <div class="top-left-side">
+            <a href="" class="file-download-link"
+              ><svg class="file-download-svg" width="80" height="106">
+                <use href="./images/icons.svg#file-download"></use>
+              </svg>
+            </a>
+            <h3 class="modal-subtitle">Download free plan</h3>
+            <ul class="modal-list list">
+              <li class="modal-item">
+                <svg class="modal-arrow-svg" width="14" height="14">
+                  <use href="./images/icons.svg#modal-arrow"></use>
+                </svg>
+                Basic functionality
+              </li>
+              <li class="modal-item">
+                <svg class="modal-arrow-svg" width="14" height="14">
+                  <use href="./images/icons.svg#modal-arrow"></use>
+                </svg>
+                Limited access
+              </li>
+              <li class="modal-item">
+                <svg class="modal-arrow-svg" width="14" height="14">
+                  <use href="./images/icons.svg#modal-arrow"></use>
+                </svg>
+                Community support
+              </li>
+            </ul>
+          </div>
+          <div class="top-right-side">
+            <a href="" class="file-download-link">
+              <svg class="file-download-svg" width="80" height="106">
+                <use href="./images/icons.svg#file-download"></use>
+              </svg>
+            </a>
+            <h3 class="modal-subtitle">Download for 20$</h3>
+            <ul class="modal-list list">
+              <li class="modal-item">
+                <svg class="modal-arrow-svg" width="14" height="14">
+                  <use href="./images/icons.svg#modal-arrow"></use>
+                </svg>
+                Ad-free experience
+              </li>
+              <li class="modal-item">
+                <svg class="modal-arrow-svg" width="14" height="14">
+                  <use href="./images/icons.svg#modal-arrow"></use>
+                </svg>
+                Unlock exclusive features
+              </li>
+              <li class="modal-item">
+                <img
+                  class=""
+                  src="./images/bxs_right-arrow.svg"
+                  alt=""
+                  width="14"
+                  height="14"
+                />
+                Content for the ultimate mobile experience
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="modal-text">
+          Nunc vulputate nibh sed congue facilisis. Curabitur posuere
+          scelerisque neque. In sit amet lectus non lacus
+        </p>
+        <div class="modal-position-bottom">
+          <div class="bottom-left-side">
+            <ul class="list">
+              <li class="modal-item">
+                <svg class="modal-bottom-svg" width="28" height="28">
+                  <use href="./images/icons.svg#file"></use>
+                </svg>
+                <ul class="modal-list list">
+                  <li class="item">App name</li>
+                  <li class="item">Mobileapp.layout</li>
+                </ul>
+              </li>
+              <li class="modal-item">
+                <svg class="modal-bottom-svg" width="28" height="28">
+                  <use href="./images/icons.svg#zip"></use>
+                </svg>
+                <ul class="modal-list list">
+                  <li class="item">License</li>
+                  <li class="item">Free</li>
+                </ul>
+              </li>
+              <li class="modal-item">
+                <svg class="modal-bottom-svg" width="28" height="28">
+                  <use href="./images/icons.svg#avatar"></use>
+                </svg>
+                <ul class="modal-list list">
+                  <li class="item">Author</li>
+                  <li class="item">Mobile Marrket App.com</li>
+                </ul>
+              </li>
+              <li class="modal-item">
+                <svg class="modal-bottom-svg" width="28" height="28">
+                  <use href="./images/icons.svg#calendar"></use>
+                </svg>
+                <ul class="modal-list list">
+                  <li class="item">Data</li>
+                  <li class="item">21.02.2022</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom-right-side">
+            <ul class="list">
+              <li class="modal-item">
+                <svg class="modal-bottom-svg" width="28" height="28">
+                  <use href="./images/icons.svg#compucter"></use>
+                </svg>
+                <ul class="modal-list list">
+                  <li class="item">OC</li>
+                  <li class="item">Windows</li>
+                </ul>
+              </li>
+              <li class="modal-item">
+                <svg class="modal-bottom-svg" width="28" height="28">
+                  <use href="./images/icons.svg#language"></use>
+                </svg>
+                <ul class="modal-list list">
+                  <li class="item">Language</li>
+                  <li class="item">English</li>
+                </ul>
+              </li>
+              <li class="modal-item">
+                <svg class="modal-bottom-svg" width="28" height="28">
+                  <use href="./images/icons.svg#weight"></use>
+                </svg>
+                <ul class="modal-list list">
+                  <li class="item">Size</li>
+                  <li class="item">4.16 MB</li>
+                </ul>
+              </li>
+              <li class="modal-item">
+                <svg class="modal-bottom-svg" width="28" height="28">
+                  <use href="./images/icons.svg#download"></use>
+                </svg>
+                <ul class="modal-list list">
+                  <li class="item">Downloads</li>
+                  <li class="item">964</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="modal-btn btn" type="button">Download</button>
+      </div>
     </div>
     <script
       type="text/javascript"
@@ -468,7 +672,7 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="./js/slider.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
