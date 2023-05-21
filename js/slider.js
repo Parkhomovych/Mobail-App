@@ -1,5 +1,5 @@
 
-$('.customers-slider').slick({
+$('.testimonials-slider').slick({
   dots: true,
   infinite: true,
   speed: 300,

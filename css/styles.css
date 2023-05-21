@@ -142,8 +142,7 @@ img {
   line-height: 17px;
   color: var(--first-color);
 }
-.hero-arrow-svg {
-}
+
 .hero-item:not(:last-child) {
   margin-bottom: 14px;
 }
@@ -285,8 +284,6 @@ img {
   display: flex;
   gap: 20px;
 }
-.video-item {
-}
 .social-link {
   width: 60px;
   height: 60px;
@@ -400,14 +397,14 @@ img {
 } */
 /**
   |============================
-  | customers
+  | testimonials
   |============================
 */
 
-.customers-conteiner {
+.testimonials-conteiner {
   padding: 80px;
 }
-.customers-title {
+.testimonials-title {
   margin-bottom: 40px;
 
   font-weight: 700;
@@ -423,7 +420,7 @@ img {
   border-radius: 50%;
   overflow: hidden;
 }
-.customers-name {
+.testimonials-name {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -432,7 +429,7 @@ img {
   text-align: center;
   color: var(--second-color);
 }
-.customers-post {
+.testimonials-post {
   margin-bottom: 40px;
   font-weight: 500;
   font-size: 14px;
@@ -440,7 +437,7 @@ img {
   text-align: center;
   color: var(--second-color);
 }
-.customers-text {
+.testimonials-text {
   margin-bottom: 20px;
 
   font-weight: 500;
