@@ -8,6 +8,9 @@
   | Global styles
   |============================
 */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Inter";
   font-style: normal;
